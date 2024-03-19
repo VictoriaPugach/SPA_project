@@ -1,0 +1,89 @@
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_title{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+    &_subtitle{
+        font-weight: 600;
+        margin-bottom: 12px;
+        &2{
+            font-size: 28px;
+        }
+    }
+    &_options{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    &_form-field{
+        margin-top: 37px;
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+.heart-img{
+    min-width: 154px;
+    min-height: 134px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    &_1{
+        background-image: url(./images/pleased_heart.svg);
+    }
+    &_2{
+        background-image: url(./images/sad_heart.svg);
+    }
+
+    margin-top: 36px;
+    margin-bottom: 20px;
+}
+
+.result_radio_btn {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.result_radio_btn input[type=radio] {
+	display: none;
+}
+
+.result_radio_btn label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
+
+	display: flex;
+	padding: 0px 15px;
+	line-height: 34px;
+    background: #580EA2;
+    border-radius: 6px;
+    height: 46px;
+    min-width: 278px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    &:hover{
+        background: #271A58;
+    }
+}
+ 
+/* Checked */
+.result_radio_btn input[type=radio]:checked + label {
+	background:  #271A58;;
+}
+ 
+
+
+
+
+

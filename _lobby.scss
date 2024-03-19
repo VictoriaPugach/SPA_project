@@ -1,0 +1,62 @@
+.lobby{
+    &_top{
+        height: 55px;
+        background-color: #E8D4FF;
+    }
+    &_title{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    &_form{
+        &_button{
+            margin-top: 30px;
+        }
+        &_button{
+            background: #580EA2;
+            &:hover{
+                background: #271A58;
+            }
+        }
+    }
+    &_players {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &_footer{
+        margin-top: 6px;
+
+        height: 190px;
+        min-width: 320px;
+
+        background-image: url(./images/gray_hands.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.players{
+    &_name{
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &_card{
+        display: flex;
+        align-items: center;
+        align-content: center;
+
+        display: flex;
+	    padding: 0px 15px;
+	    line-height: 34px;
+        border-radius: 36px;
+        background: #F9EBFF;
+        height: 55px;
+        min-width: 278px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

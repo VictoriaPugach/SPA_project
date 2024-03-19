@@ -1,0 +1,89 @@
+.title{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+}
+
+.button{
+    font-family: 'Roboto', sans-serif;
+    min-width: 278px;
+
+    height: 46px;
+    background: #C4C4C4;
+    border-radius: 6px;
+    border-color: transparent;
+
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    &:hover{
+        background: #580EA2;           
+    }
+}
+
+.btn_container{
+    display: flex;
+    flex-direction: column;
+}
+    
+
+
+.author{
+    min-width: 278px;
+
+   &_top{
+    height: 190px;
+    min-width: 320px;
+
+    background-image: url(./images/bg_hands.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    }
+    &_title{
+        width: 248px;
+        margin-top: 39px;}
+
+    &_form{
+        &-field{
+            min-width: 278px;  
+            display: flex;
+            flex-direction: column;
+        } 
+        &_button{
+            margin-top: 30px;
+        }     
+    }
+    &_nickname{
+        margin-top: 30px;
+        margin-left: 15px;
+
+        font-weight: 400;
+        font-size: 14px;
+    }
+    &_input{
+        font-family: 'Roboto', sans-serif;
+        margin-top: 7px;  
+        padding: 12px;      
+
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+
+        box-sizing: border-box;
+        height: 40px;
+
+        background: #FFFFFF;
+        border: 1px solid #D9D9D9;
+        border-radius: 30px;
+        ::placeholder{
+            color: #C4C4C4;
+        }
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+
+
+@import 'authorization';
+@import 'lobby';
+@import 'waiting';
+@import 'game';
+@import 'result';
+
+
+
+

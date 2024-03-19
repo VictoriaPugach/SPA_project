@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.center {
+  padding-left: 21px;
+  padding-right: 21px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  min-width: 278px;
+  height: 46px;
+  background: #C4C4C4;
+  border-radius: 6px;
+  border-color: transparent;
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 16px;
+}
+.button:hover {
+  background: #580EA2;
+}
+
+.btn_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.author {
+  min-width: 278px;
+}
+.author_top {
+  height: 190px;
+  min-width: 320px;
+  background-image: url(./images/bg_hands.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.author_title {
+  width: 248px;
+  margin-top: 39px;
+}
+.author_form-field {
+  min-width: 278px;
+  display: flex;
+  flex-direction: column;
+}
+.author_form_button {
+  margin-top: 30px;
+}
+.author_nickname {
+  margin-top: 30px;
+  margin-left: 15px;
+  font-weight: 400;
+  font-size: 14px;
+}
+.author_input {
+  font-family: "Roboto", sans-serif;
+  margin-top: 7px;
+  padding: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  box-sizing: border-box;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #D9D9D9;
+  border-radius: 30px;
+}
+.author_input ::-moz-placeholder {
+  color: #C4C4C4;
+}
+.author_input :-ms-input-placeholder {
+  color: #C4C4C4;
+}
+.author_input ::placeholder {
+  color: #C4C4C4;
+}
+
+.lobby_top {
+  height: 55px;
+  background-color: #E8D4FF;
+}
+.lobby_title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.lobby_form_button {
+  margin-top: 30px;
+}
+.lobby_form_button {
+  background: #580EA2;
+}
+.lobby_form_button:hover {
+  background: #271A58;
+}
+.lobby_players {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.lobby_footer {
+  margin-top: 6px;
+  height: 190px;
+  min-width: 320px;
+  background-image: url(./images/gray_hands.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.players_name {
+  font-size: 18px;
+  font-weight: 400;
+}
+.players_card {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  padding: 0px 15px;
+  line-height: 34px;
+  border-radius: 36px;
+  background: #F9EBFF;
+  height: 55px;
+  min-width: 278px;
+  justify-content: center;
+  align-items: center;
+}
+
+.waiting_title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+.waiting_subtitle {
+  text-align: center;
+  margin-bottom: 65px;
+}
+.waiting_subtitle_container {
+  min-width: 211px;
+  display: flex;
+  justify-content: center;
+}
+
+.subtitle {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.hourglass-img {
+  margin-top: 6px;
+  min-height: 130px;
+  margin-bottom: 65px;
+  background-image: url(./images/hourglass.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.game_title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.game_subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+.game_options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.game_form-field {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.game_img {
+  width: 90px;
+  height: 115px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.game_img_1 {
+  background-image: url(./images/rock_hand.svg);
+}
+.game_img_2 {
+  background-image: url(./images/scissors_hand.svg);
+}
+.game_img_3 {
+  background-image: url(./images/paper_hand.svg);
+}
+
+.game_radio_btn {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  height: 120px;
+}
+
+.game_radio_btn input[type=radio] {
+  display: none;
+}
+
+.game_radio_btn label {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  padding: 0px 15px;
+  line-height: 34px;
+  background: #580EA2;
+  border-radius: 6px;
+  min-height: 46px;
+  min-width: 154px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.game_radio_btn label:hover {
+  background: #271A58;
+}
+
+/* Checked */
+.game_radio_btn input[type=radio]:checked + label {
+  background: #271A58;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.result_title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.result_subtitle {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.result_subtitle2 {
+  font-size: 28px;
+}
+.result_options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.result_form-field {
+  margin-top: 37px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.heart-img {
+  min-width: 154px;
+  min-height: 134px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-top: 36px;
+  margin-bottom: 20px;
+}
+.heart-img_1 {
+  background-image: url(./images/pleased_heart.svg);
+}
+.heart-img_2 {
+  background-image: url(./images/sad_heart.svg);
+}
+
+.result_radio_btn {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.result_radio_btn input[type=radio] {
+  display: none;
+}
+
+.result_radio_btn label {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  padding: 0px 15px;
+  line-height: 34px;
+  background: #580EA2;
+  border-radius: 6px;
+  height: 46px;
+  min-width: 278px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.result_radio_btn label:hover {
+  background: #271A58;
+}
+
+/* Checked */
+.result_radio_btn input[type=radio]:checked + label {
+  background: #271A58;
+}/*# sourceMappingURL=style.css.map */
